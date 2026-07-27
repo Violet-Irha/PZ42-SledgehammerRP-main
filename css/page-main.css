@@ -1,0 +1,157 @@
+@import url(https://fonts.googleapis.com/css2?family=Jersey+10&display=swap);
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+
+/* SledgehammerRP website CSS file */
+/* See more at: https://github.com/Violet-Irha/PZ42-SledgehammerRP-main/tree/main */
+
+/* Universal variables. Use when possible across the site. Import @page-main.css into new page-xxxxx.css files. */
+:root {
+    /* color */
+    --asphalt: #1b1d18;       /* page background — concrete / dead grass at night */
+    --panel: #24261f;         /* board panel behind the cards */
+    --paper: #e8e4d3;         /* card colour*/
+    --paper-dim: #cfc9b4;     /* secondary text on cards*/
+    --ink: #141410;           /* body text on paper */
+    --rust: #b5651d;          /* accent color for borders, titles, ect.*/
+    --hazard: #d9a62e;        /* tag -  */
+    --blood: #8b3a3a;         /* tag - pvp */
+    --infected: #5f7a4a;      /* tag - */
+    --rust-dim: #8a4d16;      /* tag - */
+    --water: #0377fc;         /* tag - community */
+    --discord: #7289da;       /* tag - discord */
+    --dark-water: #123761;    /* tag - staff */
+
+    /* text and fonts */
+    --font-display: 'Jersey 10', sans-serif;
+    --font-body: 'IBM Plex Mono', 'Courier New', monospace;
+
+    /* layout */
+    --card-radius: 2px;
+    --board-padding: clamp(1.5rem, 5vw, 4rem);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+body { 
+    margin: 0;
+    background-color: var(--asphalt);
+    background-image:
+        radial-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+        radial-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+    background-size: 3px 3px, 7px 7px;
+    background-position: 0 0, 2px 3px;
+    color: var(--paper);
+    font-family: var(--font-body);
+    line-height: 1.5;
+}
+
+/* things on top of page, incl. navi-bar, titles, ect. */
+.boardHeader {
+    max-width: 62rem;
+    margin: 0 auto;
+    padding: clamp(2.5rem, 8vw, 5rem) var(--board-padding) 2rem;
+    text-align: center;
+    border-bottom: 1px dashed rgba(232, 228, 211, 0.2);
+}
+
+.boardHeader__eyebrow {
+    margin: 0 0 1.1rem;
+    font-size: 1.5rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--hazard);
+    font-weight: 600;
+}
+
+.boardNav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.4rem 1.9rem;
+    padding-bottom: 1.4rem;
+    margin-bottom: 1.4rem;
+    border-bottom: 1px dashed rgba(232, 228, 211, 0.2);
+}
+
+.boardNav a {
+    font-family: var(--font-body);
+    font-size: 0.78rem;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--paper-dim);
+    text-decoration: none;
+    padding-bottom: 0.25rem;
+    border-bottom: 2px solid transparent;
+    transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.boardNav a:hover,
+.boardNav a:focus-visible {
+    color: var(--paper);
+    border-color: var(--hazard);
+}
+
+.boardNav a[aria-current="page"] {
+    color: var(--paper);
+    border-color: var(--rust);
+}
+
+.boardHeader__title {
+    margin: 0;
+    font-family: var(--font-display);
+    font-weight: 400;
+    font-size: clamp(3rem, 10vw, 6rem);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--paper);
+    text-shadow: 3px 3px 0 var(--rust);
+}
+
+.boardHeader__sub {
+    max-width: 34rem;
+    margin: 1rem auto 0;
+    color: var(--paper-dim);
+    font-size: 0.95rem;
+}
+
+.boardFooter {
+    text-align: center;
+    padding: 2rem var(--board-padding) 3rem;
+    font-size: 0.75rem;
+    letter-spacing: 0.04em;
+    color: var(--paper-dim);
+    opacity: 0.7;
+}
+
+.infoSection {
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 2.75rem var(--board-padding) 0;
+    position: relative;
+    background-color: var(--paper-dim);
+    color: var(--ink);
+    padding: 2.1rem 1.5rem 1.5rem;
+    border-radius: var(--card-radius);
+    box-shadow:
+        0 1px 0 rgba(0, 0, 0, 0.3),
+        0 14px 24px -12px rgba(0, 0, 0, 0.6);
+    opacity: 100;
+    
+    cursor: default;
+}
+.infoSection__title {
+    margin: 0 0 1.5rem;
+    font-family: var(--font-display);
+    font-weight: 400;
+    font-size: clamp(1.8rem, 4vw, 2.4rem);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--rust);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+}

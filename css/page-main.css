@@ -20,6 +20,10 @@
     --water: #0377fc;         /* tag - community */
     --discord: #7289da;       /* tag - discord */
     --dark-water: #123761;    /* tag - staff */
+    --military: #319461;      /* tag - meta */
+    --royal: #5a33a6;         /* tag - conduct */
+    --lilac: #956aeb;         /* tag - content */
+    --lavender: #6c5991;      /* tag - fairplay */
 
     /* text and fonts */
     --font-display: 'Jersey 10', sans-serif;
@@ -52,7 +56,7 @@ body {
 .boardHeader {
     max-width: 62rem;
     margin: 0 auto;
-    padding: clamp(2.5rem, 8vw, 5rem) var(--board-padding) 2rem;
+    padding: clamp(2.5rem, 4vw, 5rem) var(--board-padding) 2rem;
     text-align: center;
     border-bottom: 1px dashed rgba(232, 228, 211, 0.2);
 }

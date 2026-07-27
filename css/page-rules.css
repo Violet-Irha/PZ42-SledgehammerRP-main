@@ -37,8 +37,10 @@
 
 .ruleSection[data-category="community"] .ruleSection__title::before { background-color: var(--water); } /* bullet point colors for categories */
 .ruleSection[data-category="pvp"] .ruleSection__title::before { background-color: var(--blood); }
-.ruleSection[data-category="roleplay"] .ruleSection__title::before { background-color: var(--infected); }
+.ruleSection[data-category="roleplay"] .ruleSection__title::before { background-color: var(--royal); }
+.ruleSection[data-category="meta"] .ruleSection__title::before { background-color: var(--rust-dim); }
 .ruleSection[data-category="characters"] .ruleSection__title::before { background-color: var(--hazard); }
+
 .ruleSection[data-category="loot"] .ruleSection__title::before { background-color: var(--rust-dim); }
 .ruleSection[data-category="basing"] .ruleSection__title::before { background-color: var(--rust-dim); }
 .ruleSection[data-category="vehicles"] .ruleSection__title::before { background-color: var(--rust-dim); }
@@ -67,7 +69,7 @@
 
 
 .ruleCardContainer:hover, 
-.ruleCardContainer:focus-visible { /* hover/focus effect when cursor is over a card*/
+.ruleCardContainer:focus-visible { /* hover/focus effect when cursor is over a card */
     transform: translateY(-6px) rotate(0deg);
     box-shadow:
         0 1px 0 rgba(0, 0, 0, 0.3),
@@ -99,8 +101,16 @@
 .ruleCardContainer[data-category="community"] .ruleCardContainer__tag { background-color: var(--water); } /* card tag colors */
 .ruleCardContainer[data-category="discord"] .ruleCardContainer__tag { background-color: var(--discord); }
 .ruleCardContainer[data-category="staff"] .ruleCardContainer__tag { background-color: var(--dark-water); }
-.ruleCardContainer[data-category="pvp"] .ruleCardContainer__tag { background-color: var(--blood); }
+
 .ruleCardContainer[data-category="roleplay"] .ruleCardContainer__tag { background-color: var(--infected); }
+.ruleCardContainer[data-category="conduct"] .ruleCardContainer__tag { background-color: var(--royal); }
+.ruleCardContainer[data-category="content"] .ruleCardContainer__tag { background-color: var(--lilac); }
+.ruleCardContainer[data-category="fairplay"] .ruleCardContainer__tag { background-color: var(--lavender); }
+
+.ruleCardContainer[data-category="exploits"] .ruleCardContainer__tag { background-color: var(--rust); }
+.ruleCardContainer[data-category="chat"] .ruleCardContainer__tag { background-color: var(--rust-dim); }
+
+.ruleCardContainer[data-category="pvp"] .ruleCardContainer__tag { background-color: var(--blood); }
 .ruleCardContainer[data-category="characters"] .ruleCardContainer__tag { background-color: var(--hazard); }
 .ruleCardContainer[data-category="loot"] .ruleCardContainer__tag { background-color: var(--hazard); }
 .ruleCardContainer[data-category="basing"] .ruleCardContainer__tag { background-color: var(--hazard); }

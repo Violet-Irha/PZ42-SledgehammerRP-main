@@ -72,10 +72,10 @@ hr.horizontal-line {
 .ruleSection[data-category="roleplay"] .ruleSection__title::before { background-color: var(--royal); }
 .ruleSection[data-category="meta"] .ruleSection__title::before { background-color: var(--rust-dim); }
 .ruleSection[data-category="characters"] .ruleSection__title::before { background-color: var(--hazard); }
-
+.ruleSection[data-category="dmr"] .ruleSection__title::before { background-color: var(--bubblegum); }
 .ruleSection[data-category="loot"] .ruleSection__title::before { background-color: var(--rust-dim); }
 .ruleSection[data-category="basing"] .ruleSection__title::before { background-color: var(--rust-dim); }
-.ruleSection[data-category="vehicles"] .ruleSection__title::before { background-color: var(--rust-dim); }
+.ruleSection[data-category="groups"] .ruleSection__title::before { background-color: var(--rust-dim); }
 
 .ruleContainerGrid {
     display: grid;
@@ -147,7 +147,13 @@ hr.horizontal-line {
 .ruleCardContainer[data-category="hostage"] .ruleCardContainer__tag { background-color: var(--bright-blood); }
 
 .ruleCardContainer[data-category="characters"] .ruleCardContainer__tag { background-color: var(--hazard); }
-.ruleCardContainer[data-category="loot"] .ruleCardContainer__tag { background-color: var(--hazard); }
+.ruleCardContainer[data-category="looting"] .ruleCardContainer__tag { background-color: var(--hazard); }
+.ruleCardContainer[data-category="economy"] .ruleCardContainer__tag { background-color: var(--deep-hazard); }
+
+.ruleCardContainer[data-category="medical"] .ruleCardContainer__tag { background-color: var(--bubblegum); }
+.ruleCardContainer[data-category="death"] .ruleCardContainer__tag { background-color: var(--deep-bubblegum); }
+.ruleCardContainer[data-category="revive"] .ruleCardContainer__tag { background-color: var(--light-bubblegum); }
+
 .ruleCardContainer[data-category="basing"] .ruleCardContainer__tag { background-color: var(--hazard); }
 .ruleCardContainer[data-category="vehicles"] .ruleCardContainer__tag { background-color: var(--hazard); }
 

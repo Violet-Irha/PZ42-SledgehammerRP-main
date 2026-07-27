@@ -13,12 +13,13 @@
     --paper-dim: #cfc9b4;     /* secondary text on cards*/
     --ink: #141410;           /* body text on paper */
     --rust: #b5651d;          /* accent color for borders, titles, ect.*/
-    --hazard: #d9a62e;        /* tag -  */
+    --hazard: #d9a62e;        /* tag - loot*/
+    --deep-hazard: #6c7308;   /* tag - economy*/
     --blood: #8b3a3a;         /* tag - pvp */
     --deep-blood: #520f26;    /* tag - raiding */
     --bright-blood: #c95b81;  /* tag - hostage */
     --infected: #5f7a4a;      /* tag - roleplay*/
-    --rust-dim: #8a4d16;      /* tag - */
+    --rust-dim: #8a4d16;      /* tag - chat */
     --water: #0377fc;         /* tag - community */
     --discord: #7289da;       /* tag - discord */
     --dark-water: #123761;    /* tag - staff */
@@ -26,6 +27,9 @@
     --royal: #5a33a6;         /* tag - conduct */
     --lilac: #956aeb;         /* tag - content */
     --lavender: #6c5991;      /* tag - fairplay */
+    --bubblegum: #ff26f1;     /* tag - dmr/medical */
+    --deep-bubblegum: #91218a;/* tag - death */
+    --light-bubblegum: #9c4e96;/*tag - revive */
 
     /* text and fonts */
     --font-display: 'Jersey 10', sans-serif;

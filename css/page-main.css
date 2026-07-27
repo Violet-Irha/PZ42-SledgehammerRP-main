@@ -15,7 +15,9 @@
     --rust: #b5651d;          /* accent color for borders, titles, ect.*/
     --hazard: #d9a62e;        /* tag -  */
     --blood: #8b3a3a;         /* tag - pvp */
-    --infected: #5f7a4a;      /* tag - */
+    --deep-blood: #520f26;    /* tag - raiding */
+    --bright-blood: #c95b81;  /* tag - hostage */
+    --infected: #5f7a4a;      /* tag - roleplay*/
     --rust-dim: #8a4d16;      /* tag - */
     --water: #0377fc;         /* tag - community */
     --discord: #7289da;       /* tag - discord */

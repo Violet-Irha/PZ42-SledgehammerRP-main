@@ -111,6 +111,9 @@
 .ruleCardContainer[data-category="chat"] .ruleCardContainer__tag { background-color: var(--rust-dim); }
 
 .ruleCardContainer[data-category="pvp"] .ruleCardContainer__tag { background-color: var(--blood); }
+.ruleCardContainer[data-category="raiding"] .ruleCardContainer__tag { background-color: var(--deep-blood); }
+.ruleCardContainer[data-category="hostage"] .ruleCardContainer__tag { background-color: var(--bright-blood); }
+
 .ruleCardContainer[data-category="characters"] .ruleCardContainer__tag { background-color: var(--hazard); }
 .ruleCardContainer[data-category="loot"] .ruleCardContainer__tag { background-color: var(--hazard); }
 .ruleCardContainer[data-category="basing"] .ruleCardContainer__tag { background-color: var(--hazard); }

@@ -71,7 +71,7 @@ hr.horizontal-line {
 .ruleSection[data-category="pvp"] .ruleSection__title::before { background-color: var(--blood); }
 .ruleSection[data-category="roleplay"] .ruleSection__title::before { background-color: var(--royal); }
 .ruleSection[data-category="meta"] .ruleSection__title::before { background-color: var(--rust-dim); }
-.ruleSection[data-category="characters"] .ruleSection__title::before { background-color: var(--cotton-candy); }
+.ruleSection[data-category="characters"] .ruleSection__title::before { background-color: var(--hazard); }
 .ruleSection[data-category="dmr"] .ruleSection__title::before { background-color: var(--bubblegum); }
 .ruleSection[data-category="loot"] .ruleSection__title::before { background-color: var(--rust-dim); }
 .ruleSection[data-category="basing"] .ruleSection__title::before { background-color: var(--rust-dim); }
@@ -146,7 +146,7 @@ hr.horizontal-line {
 .ruleCardContainer[data-category="raiding"] .ruleCardContainer__tag { background-color: var(--deep-blood); }
 .ruleCardContainer[data-category="hostage"] .ruleCardContainer__tag { background-color: var(--bright-blood); }
 
-
+.ruleCardContainer[data-category="characters"] .ruleCardContainer__tag { background-color: var(--hazard); }
 .ruleCardContainer[data-category="looting"] .ruleCardContainer__tag { background-color: var(--hazard); }
 .ruleCardContainer[data-category="economy"] .ruleCardContainer__tag { background-color: var(--deep-hazard); }
 
@@ -154,14 +154,9 @@ hr.horizontal-line {
 .ruleCardContainer[data-category="death"] .ruleCardContainer__tag { background-color: var(--deep-bubblegum); }
 .ruleCardContainer[data-category="revive"] .ruleCardContainer__tag { background-color: var(--light-bubblegum); }
 
+.ruleCardContainer[data-category="basing"] .ruleCardContainer__tag { background-color: var(--hazard); }
+.ruleCardContainer[data-category="vehicles"] .ruleCardContainer__tag { background-color: var(--hazard); }
 
-.ruleCardContainer[data-category="creation"] .ruleCardContainer__tag { background-color: var(--deep-cotton-candy); }
-
-.ruleCardContainer[data-category="basing"] .ruleCardContainer__tag { background-color: var(--slate); }
-.ruleCardContainer[data-category="vehicles"] .ruleCardContainer__tag { background-color: var(--deep-slate); }
-
-.ruleCardContainer[data-category="faction"] .ruleCardContainer__tag { background-color: var(--slate); }
-.ruleCardContainer[data-category="group"] .ruleCardContainer__tag { background-color: var(--slate); }
 
 .ruleCardContainer__title { /* title for each card */
     margin: 0 0 0.6rem;

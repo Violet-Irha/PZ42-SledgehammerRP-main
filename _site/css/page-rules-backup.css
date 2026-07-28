@@ -2,11 +2,6 @@
 @import url('page-main.css'); /* SledgehammerRP — page-rules.css extends page-main.css */
 
 /* SECTION - one per category of cards, holds them in 3xN grid.*/
-hr.horizontal-line {
-    border: none;
-    border-top: 0.25rem solid #333;
-    margin: 2rem 20%;
-}
 .ruleSection {
     max-width: 78rem;
     margin: 0 auto;
@@ -28,18 +23,6 @@ hr.horizontal-line {
     display: inline-flex;
     align-items: center;
     gap: 0.75rem;
-    cursor: pointer;
-    list-style: none;
-    user-select: none;
-}
-
-.ruleSection__title::-webkit-details-marker {
-    display: none;
-}
-
-.ruleSection__title:hover,
-.ruleSection__title:focus-visible {
-    color: var(--hazard);
 }
 
 .ruleSection__title::before {
@@ -51,31 +34,16 @@ hr.horizontal-line {
     box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.25);
 }
 
-.ruleSection__title::after {
-    content: "";
-    width: 0;
-    height: 0;
-    border-left: 8px solid var(--paper-dim);
-    border-top: 6px solid transparent;
-    border-bottom: 6px solid transparent;
-    margin-left: 0.25rem;
-    transition: transform 0.2s ease;
-}
-
-.ruleSection[open] .ruleSection__title::after {
-    transform: rotate(90deg);
-}
-
 
 .ruleSection[data-category="community"] .ruleSection__title::before { background-color: var(--water); } /* bullet point colors for categories */
 .ruleSection[data-category="pvp"] .ruleSection__title::before { background-color: var(--blood); }
 .ruleSection[data-category="roleplay"] .ruleSection__title::before { background-color: var(--royal); }
 .ruleSection[data-category="meta"] .ruleSection__title::before { background-color: var(--rust-dim); }
-.ruleSection[data-category="characters"] .ruleSection__title::before { background-color: var(--cotton-candy); }
-.ruleSection[data-category="dmr"] .ruleSection__title::before { background-color: var(--bubblegum); }
+.ruleSection[data-category="characters"] .ruleSection__title::before { background-color: var(--hazard); }
+
 .ruleSection[data-category="loot"] .ruleSection__title::before { background-color: var(--rust-dim); }
 .ruleSection[data-category="basing"] .ruleSection__title::before { background-color: var(--rust-dim); }
-.ruleSection[data-category="groups"] .ruleSection__title::before { background-color: var(--rust-dim); }
+.ruleSection[data-category="vehicles"] .ruleSection__title::before { background-color: var(--rust-dim); }
 
 .ruleContainerGrid {
     display: grid;
@@ -146,28 +114,21 @@ hr.horizontal-line {
 .ruleCardContainer[data-category="raiding"] .ruleCardContainer__tag { background-color: var(--deep-blood); }
 .ruleCardContainer[data-category="hostage"] .ruleCardContainer__tag { background-color: var(--bright-blood); }
 
+.ruleCardContainer[data-category="characters"] .ruleCardContainer__tag { background-color: var(--hazard); }
+.ruleCardContainer[data-category="creation"] .ruleCardContainer__tag { background-color: var(--hazard); }
+.ruleCardContainer[data-category="social"] .ruleCardContainer__tag { background-color: var(--hazard); }
+.ruleCardContainer[data-category="characters"] .ruleCardContainer__tag { background-color: var(--hazard); }
 
-.ruleCardContainer[data-category="looting"] .ruleCardContainer__tag { background-color: var(--hazard); }
-.ruleCardContainer[data-category="economy"] .ruleCardContainer__tag { background-color: var(--deep-hazard); }
+.ruleCardContainer[data-category="loot"] .ruleCardContainer__tag { background-color: var(--hazard); }
+.ruleCardContainer[data-category="basing"] .ruleCardContainer__tag { background-color: var(--hazard); }
+.ruleCardContainer[data-category="vehicles"] .ruleCardContainer__tag { background-color: var(--hazard); }
 
-.ruleCardContainer[data-category="medical"] .ruleCardContainer__tag { background-color: var(--bubblegum); }
-.ruleCardContainer[data-category="death"] .ruleCardContainer__tag { background-color: var(--deep-bubblegum); }
-.ruleCardContainer[data-category="revive"] .ruleCardContainer__tag { background-color: var(--light-bubblegum); }
-
-
-.ruleCardContainer[data-category="creation"] .ruleCardContainer__tag { background-color: var(--deep-cotton-candy); }
-
-.ruleCardContainer[data-category="basing"] .ruleCardContainer__tag { background-color: var(--slate); }
-.ruleCardContainer[data-category="vehicles"] .ruleCardContainer__tag { background-color: var(--deep-slate); }
-
-.ruleCardContainer[data-category="faction"] .ruleCardContainer__tag { background-color: var(--slate); }
-.ruleCardContainer[data-category="group"] .ruleCardContainer__tag { background-color: var(--slate); }
 
 .ruleCardContainer__title { /* title for each card */
     margin: 0 0 0.6rem;
     font-family: var(--font-display);
     font-weight: 400;
-    font-size: 1.75rem;
+    font-size: 1.55rem;
     letter-spacing: 0.02em;
     line-height: 1.2;
     color: var(--ink);
@@ -175,7 +136,7 @@ hr.horizontal-line {
 
 .ruleCardContainer__body {
     margin: 0;
-    font-size: 1rem;
+    font-size: 0.88rem;
     color: var(--ink);
     opacity: 1;
 }
